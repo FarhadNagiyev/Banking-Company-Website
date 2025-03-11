@@ -1,14 +1,15 @@
-/* Custom Container - Similar to Tailwind's container */
+/* Custom Container with Fluid Padding */
 
 .custom-container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 2rem;
-    padding-left: 2rem;
+    /* Fluid padding that scales with viewport width */
+    padding-right: 4vw;
+    padding-left: 4vw;
 }
 
-/* Responsive breakpoints matching Tailwind's defaults */
+/* Responsive breakpoints for max-width */
 @media (min-width: 640px) {
     .custom-container {
         max-width: 640px;
@@ -46,7 +47,6 @@
 
 .custom-container-md {
     max-width: 768px;
-
 }
 
 .custom-container-lg {
@@ -61,6 +61,27 @@
     max-width: 1600px;
 }
 
+/* Fluid padding modifiers */
+.custom-container-padding-sm {
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+
+.custom-container-padding-md {
+    padding-right: 4vw;
+    padding-left: 4vw;
+}
+
+.custom-container-padding-lg {
+    padding-right: 6vw;
+    padding-left: 6vw;
+}
+
+.custom-container-padding-xl {
+    padding-right: 8vw;
+    padding-left: 8vw;
+}
+
 /* Container with no padding */
 .custom-container-fluid {
     width: 100%;
@@ -68,9 +89,25 @@
     padding-left: 0;
 }
 
+/* Container with fluid padding but clamped min/max values */
+.custom-container-fluid-clamped {
+    width: 100%;
+    padding-right: clamp(1rem, 4vw, 4rem);
+    padding-left: clamp(1rem, 4vw, 4rem);
+}
+
 /* Centered container with max width */
 .custom-container-centered {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Responsive padding adjustments */
+@media (max-width: 639px) {
+    .custom-container {
+        /* More padding on smaller screens */
+        padding-right: 6vw;
+        padding-left: 6vw;
+    }
 }
