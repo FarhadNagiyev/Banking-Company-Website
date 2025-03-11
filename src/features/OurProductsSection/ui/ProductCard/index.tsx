@@ -8,11 +8,11 @@ type ProductCardProps = {
 }
 function ProductCard({ id, imageUrl, heading, description }: ProductCardProps) {
     return (
-        <div className={`text-center items-center flex flex-col gap-[30px]
+        <div className={`text-center items-center flex flex-col gap-[20px] md:gap-[24px] 2xl:gap-[30px]
         ${(id === "0") || (id === "1") ? "border-b-[2px] lg:border-b-0 border-grey-15 lg:border-r-[2px] pb-[25px] lg:pb-0 pr-0 lg:pr-[25px]" : ""}
 
         `}>
-            <div className='size-[98px] custom-flex-center'>
+            <div className='size-[98px] custom-flex-center'>{/* temp size */}
 
                 <DynamicImage
                     alt={heading}
@@ -25,8 +25,7 @@ function ProductCard({ id, imageUrl, heading, description }: ProductCardProps) {
                     minHeight={28}
                 />
             </div>
-            <div className='flex flex-col gap-[20px]'>
-
+            <div className='flex flex-col gap-[12px] md:gap-[1rem] 2xl:gap-[20px]'>
                 <h3 className='text-[20px] 2xl:text-[24px]'>
                     {heading}
                 </h3>

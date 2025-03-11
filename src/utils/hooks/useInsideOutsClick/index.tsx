@@ -1,13 +1,8 @@
 import { useEffect, useRef } from "react";
 
-
-
-
-
 export function useInsideOutsClick<T extends HTMLElement>(
     onInsideClick?: () => void,
     onOutsideClick?: () => void
-
 ) {
     const ref = useRef<T | null>(null);
 

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #1E1E1E;
   --foreground: #171717;
@@ -9,6 +10,8 @@
   --green-60: #CAFF33;
   --white-90: #E4E4E7;
 }
+
+
 
 @theme inline {
   --breakpoint-*: initial;
