@@ -3,7 +3,8 @@ import { Lexend } from "next/font/google";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/features/Header/container";
-
+import "@/styles/customContainer.css"
+import "@/styles/fluids.css"
 const lexend = Lexend({
   variable: "--font-lexend",  // CSS değişkenini tanımla
   subsets: ["latin"],  // Latin karakter setini kullan
@@ -31,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${lexend.variable} antialiased container mx-auto px-[2rem]`}
+        className={`${geistSans.variable} ${geistMono.variable} ${lexend.variable} antialiased custom-container`}
       >
         <Header />
         {children}

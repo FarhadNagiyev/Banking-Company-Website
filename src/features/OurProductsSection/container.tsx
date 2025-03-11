@@ -1,22 +1,26 @@
 import SectionHeader from '@/components/ui/SectionHeader'
 import SectionTabs from '@/components/ui/SectionTabs'
-const content = {
-    SectionHeading: "Our Features",
-    SectionDescription: "Experience a host of powerful features at YourBank, including seamless online banking, secure transactions, and personalized financial insights, all designed to enhance your banking experience",
-    tabs: [
-        { id: "1", label: "For Individuals" },
-        { id: "2", label: "For Businesses" }]
-}
+import ProductCard from './ui/ProductCard'
+
+import { content } from './content'
 function OurProductsSection() {
     return (
-        <section>
-            <div className='lg:flex  text-center md:text-left lg:items-stretch justify-between h-[some-height] 2xl:gap-[150px]'>
+        <section className='flex flex-col gap-[100px]'>
+            <div className='flex lg:flex-row flex-col  text-center md:text-left lg:items-stretch justify-between h-[some-height] gap-[20px] lg:gap-[150px] 2xl:gap-[300px]'>
                 <div className=" md:self-start">
                     <SectionHeader heading={content.SectionHeading} description={content.SectionDescription} />
                 </div>
                 <div className='flex lg:flex-col lg:justify-end justify-center'>
                     <SectionTabs tabs={content.tabs} />
                 </div>
+            </div>
+            <div className='flex flex-col lg:flex-row justify-between gap-[25px]'>
+                {
+
+                    content.cards && content.cards.map((item) => (
+                        <ProductCard key={item.id} {...item} />
+                    ))
+                }
             </div>
 
         </section>

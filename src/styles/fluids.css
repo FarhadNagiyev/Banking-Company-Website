@@ -1,0 +1,16 @@
+.h1-fluid {
+    font-size: clamp(28px, 5vw + 1rem, 3rem);
+}
+
+
+
+.section-heading-fluid {
+    font-size: clamp(28px, 4vw, 48px);
+
+}
+
+
+
+.description-fluid-18 {
+    font-size: clamp(14px, 2vw, 18px);
+}

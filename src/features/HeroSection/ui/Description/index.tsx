@@ -7,7 +7,7 @@ const content = {
 }
 function HomePageDescription({ className }: HomePageDescriptionProps) {
     return (
-        <p className={cn('p-fluid font-light text-white-90', className)}>
+        <p className={cn('description-fluid-18 font-light text-white-90', className)}>
             {content.desc}
         </p>
     )

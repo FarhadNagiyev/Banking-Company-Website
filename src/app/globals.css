@@ -30,6 +30,7 @@
   --font-mono: var(--font-geist-mono);
   --font-lexend: var(--font-lexend);
 
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -63,21 +64,4 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.h1-fluid {
-  font-size: clamp(28px, 5vw + 1rem, 3rem);
-}
-
-.p-fluid {
-  font-size: clamp(14px, 1.5vw, 18px);
-}
-
-.section-heading-fluid {
-  font-size: clamp(28px, 4vw, 48px);
-
-}
-
-.section-description-fluid {
-  font-size: clamp(14px, 2vw, 18px);
 }

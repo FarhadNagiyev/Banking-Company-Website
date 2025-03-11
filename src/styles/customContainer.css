@@ -1,0 +1,75 @@
+/* Custom Container - Similar to Tailwind's container */
+
+.custom-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+/* Responsive breakpoints matching Tailwind's defaults */
+@media (min-width: 640px) {
+    .custom-container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .custom-container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .custom-container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .custom-container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .custom-container {
+        max-width: 1600px;
+    }
+}
+
+/* Container modifiers */
+.custom-container-sm {
+    max-width: 640px;
+}
+
+.custom-container-md {
+    max-width: 768px;
+}
+
+.custom-container-lg {
+    max-width: 1024px;
+}
+
+.custom-container-xl {
+    max-width: 1280px;
+}
+
+.custom-container-2xl {
+    max-width: 1600px;
+}
+
+/* Container with no padding */
+.custom-container-fluid {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* Centered container with max width */
+.custom-container-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
