@@ -1,4 +1,5 @@
-import HeroSection from "@/features/HeroSection/container";
+
+import HeroSection from "@/features/HeroSection/HeroSection.container";
 import OurProductsSection from "@/features/OurProductsSection/container";
 
 

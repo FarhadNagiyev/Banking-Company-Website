@@ -24,7 +24,7 @@ function SectionHeader({ heading, description }: SectionHeadingProps) {
                     <span className='text-green-60'>{secondWord}</span>
                 )}
             </h3>
-            <p className='text-grey-70 description-fluid-18'>
+            <p className='text-grey-70 fluid-18'>
                 {description}
             </p>
         </div>

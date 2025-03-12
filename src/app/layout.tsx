@@ -7,6 +7,8 @@ import "@/styles/customContainer.css"
 import "@/styles/fluids.css"
 import Providers from "@/store/Providers";
 import SidebarModal from "@/components/SidebarModal";
+import Footer from "@/features/Footer/Footer.container";
+
 const lexend = Lexend({
   variable: "--font-lexend",  // CSS değişkenini tanımla
   subsets: ["latin"],  // Latin karakter setini kullan
@@ -34,12 +36,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${lexend.variable} antialiased custom-container`}
+        className={`${geistSans.variable} ${geistMono.variable} ${lexend.variable} antialiased`}
       >
         <Providers>
-          <Header />
-          <SidebarModal />
-          {children}
+          <div className="custom-container">
+            <Header />
+            <SidebarModal />
+            {children}
+          </div>
+
+          <Footer />
         </Providers>
       </body>
     </html>

@@ -25,7 +25,7 @@ const navLinks = [
 type NavigationLinksProps = {
     wrapperStyle: string;
     linkStyle: string;
-    activeClass: string;
+    activeClass?: string;
 
 }
 function NavigationLinks({ wrapperStyle, linkStyle, activeClass }: NavigationLinksProps) {

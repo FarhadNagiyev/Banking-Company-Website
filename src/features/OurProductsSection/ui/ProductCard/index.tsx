@@ -29,7 +29,7 @@ function ProductCard({ id, imageUrl, heading, description }: ProductCardProps) {
                 <h3 className='text-[20px] 2xl:text-[24px]'>
                     {heading}
                 </h3>
-                <p className='description-fluid-18 font-light text-grey-70'>
+                <p className='fluid-18 font-light text-grey-70'>
                     {description}
                 </p>
             </div>

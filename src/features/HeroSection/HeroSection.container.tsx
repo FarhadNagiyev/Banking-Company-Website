@@ -19,7 +19,6 @@ function HeroSection() {
                 </div>
                 <CTAButton />
             </div>
-
             <HomePageIllustration />
 
         </section>
