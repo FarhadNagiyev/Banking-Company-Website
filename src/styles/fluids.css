@@ -14,3 +14,7 @@
 .fluid-18 {
     font-size: clamp(14px, 2vw, 18px);
 }
+
+.fluid-40 {
+    font-size: clamp(24px, 5vw, 40px)
+}
