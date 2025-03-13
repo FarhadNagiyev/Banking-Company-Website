@@ -1,10 +1,13 @@
+import Link from 'next/link';
 import PrimaryButton from '../ui/PrimaryButton';
 function LoginButton() {
     return (
 
         <PrimaryButton type="submit"
         >
-            Login
+            <Link href="/auth">
+                Login
+            </Link>
         </PrimaryButton>
 
     )
