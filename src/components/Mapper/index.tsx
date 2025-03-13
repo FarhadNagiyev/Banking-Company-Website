@@ -7,7 +7,7 @@ interface MapperProps<T> {
     children: React.ReactNode | ((item: T) => React.ReactNode);
     ulStyle?: string;
     liStyle?: string;
-    array?: T[];
+    array: T[];
 }
 
 function Mapper<T extends Partial<LiAttributes>>({

@@ -26,9 +26,7 @@ function Header() {
             <Logo />
 
             <NavigationLinks
-                // <ul></ul>
                 wrapperStyle='md:flex justify-between items-center hidden'
-                // <li></li>
                 linkStyle='text-[14px] 2xl:text-[18px] px-[18px] 2xl:px-[24px] py-[10px] 2xl:py-[12px] custom-rounded'
                 activeClass="bg-grey-15"
             />

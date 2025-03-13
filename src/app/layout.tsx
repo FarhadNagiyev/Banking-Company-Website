@@ -39,7 +39,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${lexend.variable} antialiased`}
       >
         <Providers>
-          <div className="custom-container">
+          <div className="custom-container ">
             <Header />
             <SidebarModal />
             {children}

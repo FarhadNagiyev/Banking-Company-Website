@@ -6,7 +6,7 @@ function HomePageIllustration() {
         <div className='custom-flex-center'>
             <DynamicImage
                 alt='abstract design image'
-                src="/HomePageIllustration.png"
+                src="/mockherosectionhomepage.webp"
                 maxWidth={515}
                 middleWidth={410}
                 minWidth={306}

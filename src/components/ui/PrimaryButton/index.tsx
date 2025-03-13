@@ -7,21 +7,24 @@ type PrimaryButton = {
     className?: string;
     onClick?: React.MouseEvent<HTMLButtonElement>;
     children: React.ReactNode;
+    type?: string;
 }
-function PrimaryButton({ className, onClick, children }: PrimaryButton) {
+function PrimaryButton({ className, onClick, children, type }: PrimaryButton) {
     return (
         <button
             onClick={() => onClick}
             className={cn(
                 "2xl:px-[30px]", "px-[24px]",
                 "2xl:py-[14px] ", "py-[12px]",
-                "bg-[var(--green-60)]",
-                "text-[var(--grey-11)]",
-                "2xl:text-[18px]",
-                "text-[14px]",
+                "bg-green-60",
+                "text-grey-11",
+                "fluid-18",
                 "custom-rounded",
                 className
-            )}>
+            )}
+
+            typeof={type}
+        >
             {children}
         </button>
     )

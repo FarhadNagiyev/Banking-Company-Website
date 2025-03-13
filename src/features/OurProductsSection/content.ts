@@ -1,6 +1,6 @@
 export const content = {
-    SectionHeading: "Our Features",
-    SectionDescription: "Experience a host of powerful features at YourBank, including seamless online banking, secure transactions, and personalized financial insights, all designed to enhance your banking experience",
+    SectionHeading: "Our Products",
+    SectionDescription: "Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations",
     tabs: [
         { id: "0", label: "For Individuals" },
         { id: "1", label: "For Businesses" }],

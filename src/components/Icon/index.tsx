@@ -4,8 +4,9 @@ type IconProps = {
     alt: string;
     src: string;
     variant: "mini" | "large";
+    className?: string;
 }
-function Icon({ src, alt, variant }: IconProps) {
+function Icon({ src, alt, variant, className }: IconProps) {
     let max: number = 0;
     let min: number = 0;
     let middle: number = 0;
@@ -26,6 +27,7 @@ function Icon({ src, alt, variant }: IconProps) {
     }
     return (
         <DynamicImage
+            className={className}
             alt={alt}
             src={src}
             maxWidth={max}
@@ -35,6 +37,7 @@ function Icon({ src, alt, variant }: IconProps) {
             middleHeight={middle}
             minHeight={min}
             priority={true}
+
         />
     )
 }

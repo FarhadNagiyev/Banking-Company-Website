@@ -7,6 +7,7 @@
   --grey-10: #191919;
   --grey-11: #1C1C1C;
   --grey-15: #262626;
+  --grey-35: #59595A;
   --grey-70: #B3B3B3;
   --green-60: #CAFF33;
   --white-90: #E4E4E7;
@@ -24,6 +25,7 @@
   --color-grey-10: var(--grey-10);
   --color-grey-11: var(--grey-11);
   --color-grey-15: var(--grey-15);
+  --color-grey-35: var(--grey-35);
   --color-grey-70: var(--grey-70);
   --color-green-60: var(--green-60);
   --color-white-90: var(--white-90);
@@ -45,6 +47,7 @@
     --grey-10: #191919;
     --grey-11: #1C1C1C;
     --grey-15: #262626;
+    --grey-35: #59595A;
     --grey-70: #B3B3B3;
     --green-60: #CAFF33;
     --white-90: #E4E4E7;

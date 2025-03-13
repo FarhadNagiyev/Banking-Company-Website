@@ -3,6 +3,7 @@ import Image from 'next/image';
 import useWindowWidth from '@/utils/hooks/useWindowWidth';
 
 type DynamicImageProps = {
+    className?: string;
     alt: string;
     src: string;
     maxWidth: number;
@@ -15,6 +16,7 @@ type DynamicImageProps = {
 }
 
 function DynamicImage({
+    className,
     alt,
     src,
     maxWidth,
@@ -47,6 +49,7 @@ function DynamicImage({
             height={height}
             width={width}
             priority={priority}
+            className={className}
         />
     )
 }
