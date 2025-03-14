@@ -21,21 +21,20 @@ function Header() {
             "bg-[var(--grey-11)]",
             "custom-border",
             "my-[30px] 2xl:my-[50px]"
-
         )}>
             <Logo />
 
             <NavigationLinks
-                wrapperStyle='md:flex justify-between items-center hidden'
+                wrapperStyle='lg:flex justify-between items-center hidden'
                 linkStyle='text-[14px] 2xl:text-[18px] px-[18px] 2xl:px-[24px] py-[10px] 2xl:py-[12px] custom-rounded'
                 activeClass="bg-grey-15"
             />
 
-            <div className='md:flex items-center justify-between hidden'>
+            <div className='lg:flex items-center justify-between hidden'>
                 <SignUpButton />
                 <LoginButton />
             </div>
-            <MobileMenuButton className='md:hidden' />
+            <MobileMenuButton className='lg:hidden' />
         </header >
     )
 }

@@ -19,6 +19,8 @@
     font-size: clamp(24px, 5vw, 40px)
 }
 
-.fluid-input-w {
-    width: clamp(298px, 40vw, 450px);
+
+.fluid-w-1326 {
+    min-width: clamp(358px, 30vw + 500px, 1326px);
+
 }

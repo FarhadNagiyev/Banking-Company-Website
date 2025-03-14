@@ -11,7 +11,7 @@ function SignUpButton() {
             "text-white"
 
         )}>
-            <Link href="/auth">
+            <Link href="/auth/signup">
                 Sign Up
             </Link>
         </PrimaryButton>

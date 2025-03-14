@@ -3,7 +3,7 @@
 
 :root {
   --background: #1E1E1E;
-  --foreground: #171717;
+  --foreground: #fff;
   --grey-10: #191919;
   --grey-11: #1C1C1C;
   --grey-15: #262626;
@@ -18,7 +18,7 @@
 @theme inline {
   --breakpoint-*: initial;
   --breakpoint-sm: 40rem;
-  --breakpoint-md: 50rem;
+  --breakpoint-md: 52rem;
   --breakpoint-lg: 64rem;
   --breakpoint-xl: 80rem;
   --breakpoint-2xl: 1440px;

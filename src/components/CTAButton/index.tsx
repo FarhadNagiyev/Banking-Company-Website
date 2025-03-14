@@ -5,7 +5,7 @@ import Link from 'next/link'
 function CTAButton() {
     return (
         <PrimaryButton className='2xl:py-[18px] py-[14px] min-w-max max-w-max max-h-max'>
-            <Link href="/auth">
+            <Link href="/auth/signup">
                 Open Account
             </Link>
         </PrimaryButton>

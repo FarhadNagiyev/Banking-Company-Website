@@ -5,7 +5,7 @@ function LoginButton() {
 
         <PrimaryButton type="submit"
         >
-            <Link href="/auth">
+            <Link href="/auth/login">
                 Login
             </Link>
         </PrimaryButton>
