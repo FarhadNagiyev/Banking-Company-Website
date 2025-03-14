@@ -3,12 +3,12 @@ import PrimaryButton from '../ui/PrimaryButton';
 function LoginButton() {
     return (
 
-        <PrimaryButton type="submit"
-        >
-            <Link href="/auth/login">
+        <Link href="/auth/login">
+            <PrimaryButton type="submit"
+            >
                 Login
-            </Link>
-        </PrimaryButton>
+            </PrimaryButton>
+        </Link>
 
     )
 }

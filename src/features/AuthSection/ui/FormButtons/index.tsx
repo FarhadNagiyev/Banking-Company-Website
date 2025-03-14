@@ -16,11 +16,11 @@ function FormButtons() {
             <PrimaryButton className="rounded-[63px]">
                 {submitButtonContent}
             </PrimaryButton>
-            <PrimaryButton className="bg-grey-15 text-white">
-                <Link href={linkHref}>
+            <Link href={linkHref} className='w-full'>
+                <PrimaryButton className="bg-grey-15 text-white w-full">
                     {linkButtonContent}
-                </Link>
-            </PrimaryButton>
+                </PrimaryButton>
+            </Link>
         </div>
     )
 }
