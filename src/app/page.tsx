@@ -3,6 +3,7 @@ import CTASection from "@/features/CTASection";
 import HeroSection from "@/features/HeroSection/HeroSection.container";
 import UseCasesSection from "@/features/UseCasesSection/UseCasesSection.container";
 import OurProductsSection from "@/features/OurProductsSection/container";
+import OurFuturesSection from "@/features/OurFeaturesSection/container";
 
 
 
@@ -12,6 +13,7 @@ export default function HomePage() {
       <HeroSection />
       <OurProductsSection />
       <UseCasesSection />
+      <OurFuturesSection />
       <CTASection />
     </div>
   );

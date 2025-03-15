@@ -1,38 +1,35 @@
 .h1-fluid {
-    font-size: clamp(28px, 5vw + 1rem, 3rem);
+    font-size: clamp(1.75rem, 5vw + 1rem, 3rem);
 }
-
-
 
 .section-heading-fluid {
-    font-size: clamp(28px, 4vw, 48px);
-
+    font-size: clamp(1.75rem, 4vw, 3rem);
 }
 
-
-
 .fluid-18 {
-    font-size: clamp(14px, 1.5vw, 18px);
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
 }
 
 .fluid-20 {
-    font-size: clamp(14px, 2vw, 20px);
+    font-size: clamp(0.875rem, 2vw, 1.25rem);
+}
 
+.fluid-22 {
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
 }
 
 .fluid-30 {
-    font-size: clamp(20px, 4vw, 30px);
+    font-size: clamp(1.25rem, 4vw, 1.875rem);
 }
 
 .fluid-40 {
-    font-size: clamp(24px, 5vw, 40px);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
 
 .fluid-58 {
-    font-size: clamp(40px, 4vw, 58px);
+    font-size: clamp(2.5rem, 4vw, 3.625rem);
 }
 
 .fluid-w-1326 {
-    min-width: clamp(358px, 30vw + 500px, 1326px);
-
+    min-width: clamp(22.375rem, 30vw + 31.25rem, 82.875rem);
 }

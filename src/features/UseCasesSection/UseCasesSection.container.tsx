@@ -1,13 +1,13 @@
 import SectionHeader from '@/components/ui/SectionHeader'
 import Features from './ui/Features'
 import Statistics from './ui/Statistics'
-import { businessFeatures, businessStatistics, content, individualsStatistics, invidualsFeatures } from './data/contents'
+import { businessFeatures, businessStatistics, header, individualsStatistics, invidualsFeatures } from './data/contents'
 
 
 function UseCasesSection() {
     return (
         <section className='flex flex-col gap-[clamp(60px,10vh,80px)]'>
-            <SectionHeader heading={content.SectionHeading} description={content.SectionDescription} />
+            <SectionHeader heading={header.SectionHeading} description={header.SectionDescription} />
 
             <div className='flex flex-col items-center justify-center h-full gap-[clamp(40px,10vh,60px)]'>
 

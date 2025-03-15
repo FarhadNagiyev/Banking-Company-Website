@@ -29,8 +29,9 @@ function SectionHeader({ heading, description, className }: SectionHeadingProps)
     return (
         <div className={
             cn(
-                "flex ",
+                "flex",
                 "flex-col",
+                "lg:justify-start justify-center items-center",
                 "2xl:gap-[14px]",
                 "gap-[10px]",
                 className
@@ -43,7 +44,7 @@ function SectionHeader({ heading, description, className }: SectionHeadingProps)
                     <div className='text-green-60'>{secondWord}</div>
                 )}
             </h3>
-            <p className='text-grey-70 fluid-18'>
+            <p className='text-grey-70 fluid-18 max-w-4/5 text-center'>
                 {description}
             </p>
         </div>

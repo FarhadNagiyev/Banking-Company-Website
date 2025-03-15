@@ -1,6 +1,6 @@
 
 
-export const content = {
+export const header = {
     SectionHeading: "Use Cases",
     SectionDescription: "At YourBank, we cater to the diverse needs of individuals and businesses alike, offering a wide range of financial solutions",
 
