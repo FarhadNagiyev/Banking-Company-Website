@@ -20,25 +20,25 @@ export const invidualsFeatures = [
     },
     {
         icon: "/book.svg",
-        title: "Homeownership"
+        title: "Education Funding"
     },
 ]
 export const businessFeatures = [
     {
-        icon: "/cash.svg",
-        title: "Managing Personal Finances"
+        icon: "/building.svg",
+        title: "Startups and Entrepreneurs"
     },
     {
-        icon: "/hands.svg",
-        title: "Saving for the Future"
+        icon: "/money.svg",
+        title: "Cash Flow Management"
     },
     {
-        icon: "/bank.svg",
-        title: "Homeownership"
+        icon: "/statistics.svg",
+        title: "Business Expansion"
     },
     {
-        icon: "/book.svg",
-        title: "Homeownership"
+        icon: "/coin.svg",
+        title: "Payment Solutions"
     },
 ]
 export const individualsStatistics = {
@@ -56,6 +56,24 @@ export const individualsStatistics = {
         {
             percent: 91,
             title: "Reducing financial burdens"
+        }
+    ]
+}
+export const businessStatistics = {
+    heading: "For Business",
+    description: " For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored financing options fuel business expansion. Whatever your financial aspirations, YourBank is committed to providing the right tools and support to achieve them",
+    percents: [
+        {
+            percent: 65,
+            title: "Cash Flow Management"
+        },
+        {
+            percent: 70,
+            title: "Drive Business Expansion"
+        },
+        {
+            percent: 45,
+            title: "Streamline payroll processing"
         }
     ]
 }

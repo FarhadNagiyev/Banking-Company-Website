@@ -1,7 +1,7 @@
 import SectionHeader from '@/components/ui/SectionHeader'
 import Features from './ui/Features'
 import Statistics from './ui/Statistics'
-import { businessFeatures, content, individualsStatistics, invidualsFeatures } from './data/contents'
+import { businessFeatures, businessStatistics, content, individualsStatistics, invidualsFeatures } from './data/contents'
 
 
 function UseCasesSection() {
@@ -17,7 +17,7 @@ function UseCasesSection() {
 
                 </div>
                 <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-[clamp(30px,5vh,100px)] h-full ">
-                    <Statistics content={individualsStatistics} />
+                    <Statistics content={businessStatistics} />
                     <Features array={businessFeatures} />
 
                 </div>

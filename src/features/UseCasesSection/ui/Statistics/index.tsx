@@ -21,7 +21,7 @@ interface StatisticsContent {
 
 function Statistics({ content }: { content: StatisticsContent }) {
     return (
-        <div className="flex flex-col justify-center  gap-[clamp(50px,1vh,62px)] text-center items-center lg:text-left">
+        <div className="flex flex-col justify-center  gap-[clamp(50px,1vh,62px)] text-center lg:items-start items-center lg:text-left">
             <div className="flex flex-col gap-[clamp(10px,1vh,14px)]">
                 <h3 className="fluid-30 font-medium">
                     {content.heading}
@@ -40,7 +40,7 @@ function Statistics({ content }: { content: StatisticsContent }) {
                             "gap-[clamp(2px,1vh,5px)]"
                         )
                     }>
-                        <div className="flex items-center justify-center text-green-60 font-medium fluid-58">
+                        <div className="flex  items-center lg:justify-start justify-center text-green-60 font-medium fluid-58">
                             <CountUp value={item.percent} className="max-w-max" />%
                         </div>
                         <p className="text-grey-70 fluid-18 font-light">{item.title}</p>
