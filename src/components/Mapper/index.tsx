@@ -1,36 +1,29 @@
 import React from 'react';
 import { cn } from '@/utils/MergeTailwindclasses';
 
-type LiAttributes = React.HTMLAttributes<HTMLLIElement>;
-
 interface MapperProps<T> {
-    children: React.ReactNode | ((item: T) => React.ReactNode);
+    children: React.ReactNode | ((item: T, index: number) => React.ReactNode);
     ulStyle?: string;
     liStyle?: string;
     array: T[];
 }
 
-function Mapper<T extends Partial<LiAttributes>>({
+function Mapper<T>({
     children,
     ulStyle = "",
     liStyle = "",
     array
 }: MapperProps<T>) {
     return (
-        <ul className={cn(
-            ulStyle
-        )}>
+        <ul className={cn(ulStyle)}>
             {
                 array && array.map((item, index) => (
                     <li
                         key={index}
-                        {...item}
-                        className={cn(
-                            liStyle
-                        )}
+                        className={cn(liStyle)}
                     >
                         {typeof children === "function"
-                            ? (children as (item: T) => React.ReactNode)(item)
+                            ? (children as (item: T, index: number) => React.ReactNode)(item, index)
                             : children}
                     </li>
                 ))

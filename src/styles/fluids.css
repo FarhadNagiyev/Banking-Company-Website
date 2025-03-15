@@ -12,13 +12,25 @@
 
 
 .fluid-18 {
-    font-size: clamp(14px, 2vw, 18px);
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+
+.fluid-20 {
+    font-size: clamp(14px, 2vw, 20px);
+
+}
+
+.fluid-30 {
+    font-size: clamp(20px, 4vw, 30px);
 }
 
 .fluid-40 {
-    font-size: clamp(24px, 5vw, 40px)
+    font-size: clamp(24px, 5vw, 40px);
 }
 
+.fluid-58 {
+    font-size: clamp(40px, 4vw, 58px);
+}
 
 .fluid-w-1326 {
     min-width: clamp(358px, 30vw + 500px, 1326px);

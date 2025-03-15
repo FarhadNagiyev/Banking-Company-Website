@@ -1,0 +1,20 @@
+.custom-border-dashed-l-b {
+    /* Default styling (for screens >= 52rem) */
+    border-right-style: dashed;
+    border-right-width: 2px;
+    border-right-color: var(--grey-15);
+    border-image: repeating-linear-gradient(to bottom, var(--grey-15) 0, var(--grey-15) 10px, transparent 10px, transparent 20px) 0 1 0 0;
+
+    /* Media query for smaller screens */
+    @media (max-width: 64rem) {
+        /* Reset right border */
+        border-right-style: none;
+        border-right-width: 0;
+
+        /* Apply bottom border */
+        border-bottom-style: dashed;
+        border-bottom-width: 2px;
+        border-bottom-color: var(--grey-15);
+        border-image: repeating-linear-gradient(to right, var(--grey-15) 0, var(--grey-15) 10px, transparent 10px, transparent 20px) 0 0 1 0;
+    }
+}

@@ -1,4 +1,5 @@
 import DynamicImage from '@/components/DynamicImage'
+import { cn } from '@/utils/MergeTailwindclasses';
 import React from 'react'
 type ProductCardProps = {
     id: string;
@@ -8,10 +9,11 @@ type ProductCardProps = {
 }
 function ProductCard({ id, imageUrl, heading, description }: ProductCardProps) {
     return (
-        <div className={`text-center items-center flex flex-col gap-[20px] md:gap-[24px] 2xl:gap-[30px]
-        ${(id === "0") || (id === "1") ? "border-b-[2px] lg:border-b-0 border-grey-15 lg:border-r-[2px] pb-[25px] lg:pb-0 pr-0 lg:pr-[25px]" : ""}
+        <div className={cn(
+            "text-center items-center flex flex-col gap-[20px] md:gap-[24px] 2xl:gap-[30px]",
+            `${(id === "0") || (id === "1") ? "border-b-[2px] lg:border-b-0 border-grey-15 lg:border-r-[2px] pb-[25px] lg:pb-0 pr-0 lg:pr-[25px]" : ""}`
 
-        `}>
+        )}>
             <div className='size-[98px] custom-flex-center'>{/* temp size */}
 
                 <DynamicImage

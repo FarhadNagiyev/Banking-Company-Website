@@ -2,7 +2,7 @@
 
 
 :root {
-  --background: #1E1E1E;
+  --background: var(--grey-10);
   --foreground: #fff;
   --grey-10: #191919;
   --grey-11: #1C1C1C;
@@ -42,7 +42,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1E1E1E;
+    --background: var(--grey-10);
     --foreground: #fff;
     --grey-10: #191919;
     --grey-11: #1C1C1C;
