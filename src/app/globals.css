@@ -74,3 +74,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.custom-section-gap {
+  gap: clamp(50px, 1vh, 80px);
+}
+
+.linear-shadow-filter {
+  background: rgb(25, 25, 25);
+  background: linear-gradient(180deg, rgba(25, 25, 25, 0.1) 72%, rgba(25, 25, 25, 1) 95%);
+}

@@ -6,7 +6,7 @@ import { businessFeatures, businessStatistics, header, individualsStatistics, in
 
 function UseCasesSection() {
     return (
-        <section className='flex flex-col gap-[clamp(60px,10vh,80px)]'>
+        <section className='flex flex-col custom-section-gap'>
             <SectionHeader heading={header.SectionHeading} description={header.SectionDescription} />
 
             <div className='flex flex-col items-center justify-center h-full gap-[clamp(40px,10vh,60px)]'>

@@ -10,7 +10,7 @@ import FeatureCards from './components/FeatureCards'
 function OurFuturesSection() {
 
     return (
-        <section className='flex   flex-col gap-[clamp(50px,1vh,80px)]'>
+        <section className='flex   flex-col custom-section-gap'>
             <SectionHeader
                 heading={header.SectionHeading}
                 description={header.SectionDescription} />

@@ -5,7 +5,7 @@ import ProductCard from './ui/ProductCard'
 import { content } from './content'
 function OurProductsSection() {
     return (
-        <section className='flex flex-col gap-[100px]'>
+        <section className='flex flex-col custom-section-gap'>
             <div className='flex lg:flex-row flex-col  text-center md:text-left lg:items-stretch justify-between h-[some-height] gap-[20px] lg:gap-[150px] 2xl:gap-[300px]'>
                 <div className=" md:self-start">
                     <SectionHeader heading={content.SectionHeading} description={content.SectionDescription} />
