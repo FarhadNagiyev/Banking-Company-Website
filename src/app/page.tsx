@@ -5,6 +5,7 @@ import UseCasesSection from "@/features/UseCasesSection/UseCasesSection.containe
 import OurProductsSection from "@/features/OurProductsSection/container";
 import OurFuturesSection from "@/features/OurFeaturesSection/container";
 import FAQSection from "@/features/FAQSection/container";
+import OurTestimonialsSection from "@/features/OurTestimonialsSection/container";
 
 
 
@@ -16,6 +17,7 @@ export default function HomePage() {
       <UseCasesSection />
       <OurFuturesSection />
       <FAQSection />
+      <OurTestimonialsSection />
       <CTASection />
     </div>
   );
