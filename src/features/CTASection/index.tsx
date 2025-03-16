@@ -12,13 +12,9 @@ function CTASection() {
        '>
             {/* <Image src="cta.svg" alt="bhnjmk" height={298} width={283} className='relative top-[-80px] left-[-80px]' /> */}
             <div className='space-y-[14px] md:space-x-0'>
-                <h3 className='fluid-40 gap-10'>
-                    <span>
-                        Start your financial journey with
-                    </span>
-                    <span className='text-green-60'>
-                        YourBank today!
-                    </span>
+                <h3 className="space-x-3 fluid-40">
+                    Start your financial journey with
+                    <span className="text-green-60 inline"> YourBank today!</span>
                 </h3>
                 <p className='fluid-18 text-grey-70'>
                     Ready to take control of your finances? Join YourBank now,
