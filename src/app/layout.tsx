@@ -10,8 +10,8 @@ import SidebarModal from "@/components/SidebarModal";
 import Footer from "@/features/Footer/Footer.container";
 
 const lexend = Lexend({
-  variable: "--font-lexend",  // CSS değişkenini tanımla
-  subsets: ["latin"],  // Latin karakter setini kullan
+  variable: "--font-lexend",
+  subsets: ["latin"],
 });
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +38,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${lexend.variable} antialiased`}
       >
+
         <Providers>
           <div className="custom-container ">
             <Header />
@@ -47,6 +48,7 @@ export default function RootLayout({
 
           <Footer />
         </Providers>
+
       </body>
     </html>
   );

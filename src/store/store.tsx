@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import isOpenReducer from "./slices/isOpenSlice";
+import renderedFuturesReducer from "./slices/renderedFuturesSlice";
 
 export const store = configureStore({
     reducer: {
         modal: isOpenReducer,
+        renderedFutures: renderedFuturesReducer,
     },
 });
 

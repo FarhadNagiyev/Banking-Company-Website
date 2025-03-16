@@ -31,20 +31,20 @@ function SectionHeader({ heading, description, className }: SectionHeadingProps)
             cn(
                 "flex",
                 "flex-col",
-                "lg:justify-start justify-center items-center",
+                "lg:justify-start justify-center   items-center lg:items-start",
                 "2xl:gap-[14px]",
                 "gap-[10px]",
                 className
             )}>
             <h3 className='
-            md:text-left text-center flex
+            lg:text-left lg:justify-start justify-center text-center flex
             font-medium section-heading-fluid 2xl:gap-[1rem] md:gap-[0.75rem] gap-[0.5rem] '>
                 <div>{firstWord}</div>
                 {secondWord && (
                     <div className='text-green-60'>{secondWord}</div>
                 )}
             </h3>
-            <p className='text-grey-70 fluid-18 max-w-4/5 text-center'>
+            <p className='text-grey-70 fluid-18 max-w-4/5 lg:text-left justify-center items-center text-center'>
                 {description}
             </p>
         </div>
