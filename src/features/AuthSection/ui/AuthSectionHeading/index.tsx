@@ -9,18 +9,20 @@ function AuthSectionHeading() {
     const heading =
         path === "/auth/signup" ? content.SignupHeading :
             path === "/auth/login" ? content.LoginHeading :
-                "Welcome to Authentication"; // `/auth` için varsayılan başlık
+                "Welcome to Authentication";
 
     const description =
         path === "/auth/signup" ? content.SignupDescription :
             path === "/auth/login" ? content.LoginDescription :
-                "Please select an authentication option."; // `/auth` için varsayılan açıklama
+                "Please select an authentication option.";
 
     return (
         <SectionHeader
+
             heading={heading}
             description={description}
-            className="items-center text-center 2xl:gap-[20px] md:gap-4 gap-2.5"
+            className="lg:justify-center  lg:items-center 2xl:gap-[20px] md:gap-4 gap-2.5"
+            descriptionStyle='flex items-center justify-center text-center max-w-full'
         />
     )
 }

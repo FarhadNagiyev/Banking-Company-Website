@@ -4,10 +4,11 @@ import React from 'react';
 type SectionHeadingProps = {
     heading: string;
     description: string;
+    descriptionStyle?: string;
     className?: string;
 };
 
-function SectionHeader({ heading, description, className }: SectionHeadingProps) {
+function SectionHeader({ heading, description, descriptionStyle, className }: SectionHeadingProps) {
     function splitTwoWords(input: string): [string, string | null] {
         // Find the first space in the string
         const spaceIndex = input.indexOf(' ');
@@ -31,7 +32,7 @@ function SectionHeader({ heading, description, className }: SectionHeadingProps)
             cn(
                 "flex",
                 "flex-col",
-                "lg:justify-start justify-center   items-center lg:items-start",
+                "lg:justify-start justify-center  items-center lg:items-start",
                 "2xl:gap-[14px]",
                 "gap-[10px]",
                 className
@@ -44,7 +45,7 @@ function SectionHeader({ heading, description, className }: SectionHeadingProps)
                     <div className='text-green-60'>{secondWord}</div>
                 )}
             </h3>
-            <p className='text-grey-70 fluid-18 max-w-4/5 lg:text-left justify-center items-center text-center'>
+            <p className={cn('text-grey-70 fluid-18 max-w-4/5 lg:text-left justify-center items-center text-center', descriptionStyle)}>
                 {description}
             </p>
         </div>
