@@ -7,9 +7,6 @@ export default function AuthPage() {
         redirect("/auth/login")
     }
     return (
-        <div>
-
-
-        </div>
+        <div></div>
     );
 }
