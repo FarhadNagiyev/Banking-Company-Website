@@ -83,3 +83,8 @@ body {
   background: rgb(25, 25, 25);
   background: linear-gradient(180deg, rgba(25, 25, 25, 0.1) 72%, rgba(25, 25, 25, 1) 95%);
 }
+
+.radial-shadow-filter {
+  background: rgb(25, 25, 25);
+  background: radial-gradient(circle, rgba(25, 25, 25, 0) 39%, rgba(25, 25, 25, 1) 100%);
+}

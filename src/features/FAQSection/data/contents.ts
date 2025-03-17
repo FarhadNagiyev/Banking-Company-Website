@@ -1,6 +1,6 @@
 export const header = {
-    SectionHeading: "Our Features",
-    SectionDescription: "Experience a host of powerful features at YourBank, including seamless online banking, secure transactions, and personalized financial insights, all designed to enhance your banking experience",
+    SectionHeading: "Frequently Asked Questions",
+    SectionDescription: "Still you have any questions? Contact our Team via support@yourbank.com",
 }
 export const FAQCardsContent = [
     {
