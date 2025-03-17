@@ -6,10 +6,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { changeRenderedFutures } from '@/store/slices/renderedFuturesSlice'
 import { RootState } from "@/store/store";
 
+
 type SectionSidebarProps = {
     className?: string;
 }
 function SectionSidebar({ className }: SectionSidebarProps) {
+
 
     const activeTabId = useSelector((state: RootState) => state.renderedFutures.renderedFutures);
     const dispatch = useDispatch();
@@ -19,15 +21,17 @@ function SectionSidebar({ className }: SectionSidebarProps) {
     }
 
     return (
-        <aside className={cn(
+        <aside
 
-            "max-h-max",
-            "p-[clamp(20px,2vw,50px)]",
-            "bg-grey-11",
-            "rounded-xl",
-            "lg:overflow-x-visible overflow-x-auto lg:whitespace-normal whitespace-nowrap",
-            className
-        )}>
+            className={cn(
+
+                "max-h-max",
+                "p-[clamp(20px,2vw,50px)]",
+                "bg-grey-11",
+                "rounded-xl",
+                "lg:overflow-x-visible overflow-x-auto lg:whitespace-normal whitespace-nowrap",
+                className
+            )}>
             <Mapper
                 ulStyle='flex lg:flex-col  lg:justify-start justify-center gap-[clamp(20px,3vw,24px)] min-w-max'
                 array={sidebar}>
