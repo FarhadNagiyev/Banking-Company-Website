@@ -2,13 +2,14 @@ import React from 'react'
 import BenefitCard from '../BenefitCard'
 import { firstLineContent, secondLineContent } from '../../data/contents'
 import "@/styles/customDashedBorder.css"
+import { LineContent } from '../../types/types'
+
+
+
 type LineProps = {
-    lineContent:
-    {
-        left: { icon: string; title: string; description: string; variant: "left" | "right"; };
-        right: { icon: string; title: string; description: string; variant: "left" | "right"; };
-    };
+    lineContent: LineContent;
 }
+
 function BenefitCards() {
     return (
         <div className='flex w-full flex-col gap-[clamp(24px,4.5vw,50px)]'>
@@ -18,7 +19,6 @@ function BenefitCards() {
         </div>
     )
 }
-
 export default BenefitCards
 
 

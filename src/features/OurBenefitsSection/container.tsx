@@ -9,9 +9,6 @@ function OurBenefitsSection() {
         <section className="flex flex-col custom-section-gap">
             <SectionHeader heading={headerContent.SectionHeading} description={headerContent.SectionDescription} />
             <BenefitCards />
-
-
-
         </section>
     )
 }
