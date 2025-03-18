@@ -18,3 +18,25 @@
         border-image: repeating-linear-gradient(to right, var(--grey-15) 0, var(--grey-15) 10px, transparent 10px, transparent 20px) 0 0 1 0;
     }
 }
+
+
+
+
+
+
+.custom-border-dashed-t {
+    border: none;
+    border-top: 2px dashed var(--grey-15);
+    border-image: repeating-linear-gradient(90deg, var(--grey-15) 0, var(--grey-15) 10px, transparent 10px, transparent 20px) 30;
+}
+
+@media (min-width: 52rem) {
+    .custom-border-dashed-r {
+
+        border-right-style: dashed;
+        border-right-width: 2px;
+        border-right-color: var(--grey-15);
+        border-image: repeating-linear-gradient(to bottom, var(--grey-15) 0, var(--grey-15) 10px, transparent 10px, transparent 20px) 0 1 0 0;
+
+    }
+}

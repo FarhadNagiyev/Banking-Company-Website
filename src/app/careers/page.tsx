@@ -1,7 +1,7 @@
 import CTASection from "@/features/CTASection";
 import FAQSection from "@/features/FAQSection/container";
 import OurBenefitsSection from "@/features/OurBenefitsSection/container";
-import OurValuesSection from "@/features/OurValuesSection";
+import OurValuesSection from "@/features/OurValuesSection/container";
 // import OverviewSection from "@/features/OverviewSection/container";
 
 export default function CareersPage() {

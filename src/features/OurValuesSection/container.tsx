@@ -5,7 +5,7 @@ import { cardsContents, headerContent } from './data/contents'
 
 function OurValuesSection() {
     return (
-        <section className='space-y-[clamp(50px,3vw,80px)]'>
+        <section className='flex  flex-col custom-section-gap'>
             <SectionHeader heading={headerContent.SectionHeading} description={headerContent.SectionDescription} />
             <Mapper
                 ulStyle='grid grid-cols-1 gap-[clamp(50px,3vw,80px)] lg:grid-cols-2'

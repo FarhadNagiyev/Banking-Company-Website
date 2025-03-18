@@ -2,6 +2,7 @@ import Icon from '@/components/Icon'
 import Link from 'next/link'
 import React from 'react'
 import Divider from '../ui/Divider';
+import { cn } from '@/utils/MergeTailwindclasses';
 
 type ContentCardProps = {
     title: string;
@@ -43,7 +44,7 @@ const ContentCard: React.FC<ContentCardProps> = ({
     children
 }) => {
     return (
-        <div className={`min-h-full flex flex-col bg-grey-11 custom-border p-[clamp(30px,5vw,50px)] rounded-[0.75rem] gap-[clamp(20px,5vh,30px)] ${className}`}>
+        <div className={cn("min-h-full flex flex-col bg-grey-11 custom-border p-[clamp(30px,5vw,50px)] rounded-[0.75rem] gap-[clamp(20px,5vh,30px)]", className)}>
             <div className='flex justify-between items-center'>
                 <h3 className='fluid-22'>
                     {title}

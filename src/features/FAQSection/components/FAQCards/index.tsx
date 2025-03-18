@@ -25,7 +25,7 @@ function FAQCards() {
                         FAQCardsContent.map((item, index) =>
                             item.id < renderLimit ? (
                                 <li key={index}>
-                                    <ContentCard showDivider={true} {...item} />
+                                    <ContentCard className='bg-grey-10' showDivider={true} {...item} />
                                 </li>
                             ) : null
                         )}

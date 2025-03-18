@@ -3,7 +3,7 @@ type OverviewSectionProps = {
 }
 function OverviewSection({ content }: OverviewSectionProps) {
     return (
-        <section>
+        <section className="flex flex-col custom-section-gap">
             <h2>{content}</h2>
             Hello World
         </section>

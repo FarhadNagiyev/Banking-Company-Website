@@ -2,9 +2,7 @@
     font-size: clamp(1.75rem, 5vw + 1rem, 3rem);
 }
 
-.section-heading-fluid {
-    font-size: clamp(1.75rem, 4vw, 3rem);
-}
+
 
 .fluid-18 {
     font-size: clamp(0.875rem, 1vw, 1.125rem);
@@ -24,6 +22,10 @@
 
 .fluid-40 {
     font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.fluid-48 {
+    font-size: clamp(1.75rem, 4vw, 3rem);
 }
 
 .fluid-58 {

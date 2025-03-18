@@ -1,7 +1,7 @@
 
 import CTASection from "@/features/CTASection";
 import HeroSection from "@/features/HeroSection/HeroSection.container";
-import UseCasesSection from "@/features/UseCasesSection/UseCasesSection.container";
+import UseCasesSection from "@/features/UseCasesSection/container";
 import OurProductsSection from "@/features/OurProductsSection/container";
 import OurFuturesSection from "@/features/OurFeaturesSection/container";
 import FAQSection from "@/features/FAQSection/container";
