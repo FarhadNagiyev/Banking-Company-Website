@@ -1,14 +1,11 @@
-import { ContentItem } from "../types/types";
+import { LineContent } from './../types/types';
 
 export const headerContent = {
     SectionHeading: "Our Benefits",
     SectionDescription: "At YourBank, we value our employees and are dedicated to their well-being and success. We offer a comprehensive range of benefits designed to support their personal and professional growth.",
 }
 
-export const firstLineContent: {
-    left: ContentItem;
-    right: ContentItem;
-} = {
+export const firstLineContent: LineContent = {
     left: {
         icon: "/statistics.svg",
         title: "Competitive Compensation",
@@ -24,10 +21,7 @@ export const firstLineContent: {
 
 }
 
-export const secondLineContent: {
-    left: ContentItem;
-    right: ContentItem;
-} = {
+export const secondLineContent: LineContent = {
     left: {
         icon: "/statistics.svg",
         title: "Competitive Compensation",

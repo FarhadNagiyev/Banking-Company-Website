@@ -42,7 +42,6 @@
   --font-mono: var(--font-geist-mono);
   --font-lexend: var(--font-lexend);
 
-
 }
 
 @media (prefers-color-scheme: dark) {

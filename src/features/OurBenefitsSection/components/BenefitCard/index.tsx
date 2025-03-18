@@ -17,7 +17,8 @@ function BenefitCard({ content }: BenefitCardProps) {
                 "flex",
                 "flex-col",
                 "gap-[clamp(20px,1vh,30px)]",
-                "bg-grey-11 p-[clamp(24px,3vw,50px)]",
+                "bg-grey-11",
+                " p-fluid-50",
                 content.variant === "left" ? " md:rounded-tl-[50px] md:rounded-tr-[20px] md:rounded-br-[50px] md:rounded-bl-[20px] || rounded-t-[40px] rounded-b-[14px]" : "",
                 content.variant === "right" ? " md:rounded-tr-[50px] md:rounded-tl-[20px] md:rounded-bl-[50px] md:rounded-br-[20px] || rounded-t-[40px] rounded-b-[14px]" : "",
             )
