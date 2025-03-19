@@ -1,9 +1,9 @@
-import OverviewSection from "@/features/OverviewSection/container";
+// import OverviewSection from "@/features/OverviewSection/container";
 
 export default function AboutPage() {
     return (
         <div>
-            <OverviewSection content="" />
+            {/* <OverviewSection content="" /> */}
             About Page
         </div>
     );
