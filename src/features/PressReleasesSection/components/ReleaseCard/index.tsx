@@ -57,7 +57,7 @@ const Date = ({ date }: { date: string }) => {
 
 const Description = ({ text }: { text: string }) => {
     return (
-        <p className="fluid-18 text-grey-70 flex-grow">
+        <p className="fluid-18 text-grey-70 flex-grow font-light">
             {text}
         </p>
     )
