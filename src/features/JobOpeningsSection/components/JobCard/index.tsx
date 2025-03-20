@@ -34,9 +34,9 @@ export default JobCard
 const Position = ({ title }: { title: string }) => {
     return (<h3 className='fluid-30 font-semibold'>{title}</h3>)
 }
-const Location = ({ place }: { place: string }) => {
+export const Location = ({ place }: { place: string }) => {
     return (
-        <div className='flex flex-wrap min-w-min max-w-max px-[clamp(10px,1vw,16px)] py-[clamp(6px,1vh,8px)] rounded-[68px] bg-grey-10 custom-border'>
+        <div className='flex flex-wrap min-w-min max-w-max gap-1  px-[clamp(10px,1vw,16px)] py-[clamp(6px,1vh,8px)] rounded-[68px] bg-grey-10 custom-border'>
             <div>
                 Location:
             </div>
@@ -48,7 +48,7 @@ const Location = ({ place }: { place: string }) => {
 }
 const Department = ({ name }: { name: string }) => {
     return (
-        <div className='flex flex-wrap min-w-min max-w-max px-[clamp(10px,1vw,16px)] py-[clamp(6px,1vh,8px)] rounded-[68px] bg-grey-10 custom-border'>
+        <div className='flex flex-wrap min-w-min gap-1 max-w-max px-[clamp(10px,1vw,16px)] py-[clamp(6px,1vh,8px)] rounded-[68px] bg-grey-10 custom-border'>
             <div>
                 Department:
             </div>

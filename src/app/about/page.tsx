@@ -1,10 +1,13 @@
-// import OverviewSection from "@/features/OverviewSection/container";
+
+
+import PressReleasesSection from "@/features/PressReleasesSection/container";
 
 export default function AboutPage() {
     return (
-        <div>
-            {/* <OverviewSection content="" /> */}
-            About Page
+        <div className="flex flex-col p-fluid-60 custom-page-gap">
+
+
+            <PressReleasesSection />
         </div>
     );
 }

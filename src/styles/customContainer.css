@@ -34,11 +34,12 @@
     }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1920px) {
     .custom-container {
         max-width: 1600px;
     }
 }
+
 
 /* Container modifiers */
 .custom-container-sm {
@@ -58,6 +59,10 @@
 }
 
 .custom-container-2xl {
+    max-width: 1300px;
+}
+
+.custom-container-3xl {
     max-width: 1600px;
 }
 

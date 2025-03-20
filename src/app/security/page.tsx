@@ -4,7 +4,7 @@ import HowWeProtectYouSection from "@/features/HowWeProtectYouSection/container"
 
 export default function SecurityPage() {
     return (
-        <div className="2xl:my-[100px] md:my-[60px] space-y-[20px] md:space-y-[60px] 2xl:space-y-[100px]">
+        <div className="flex flex-col p-fluid-60 custom-page-gap">
             {/* <OverviewSection content="" /> */}
             <HowWeProtectYouSection />
             <FAQSection />

@@ -23,6 +23,7 @@
   --breakpoint-lg: 64rem;
   --breakpoint-xl: 80rem;
   --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1920px;
 
   --color-grey-10: var(--grey-10);
   --color-grey-11: var(--grey-11);
@@ -82,6 +83,10 @@ body {
 
 .custom-section-gap {
   gap: clamp(50px, 1vh, 80px);
+}
+
+.custom-page-gap {
+  gap: clamp(20px, 4vw, 100px);
 }
 
 .linear-shadow-filter {
